@@ -1,3 +1,39 @@
+body {
+ font-family: 'Lato', sans-serif;
+ background-color: #00284A;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+h2, h3, h4, h5, h6, p {
+    color: #ED7703;
+    font-family: 'Lato', sans-serif;
+}
+
+tbody, tfoot, thead, tbody tr:nth-child(even) {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+table h1 {
+    font-weight: bold;
+}
+
+hr {
+    margin-bottom: 4rem;
+}
+
+.schools-list p {
+    margin-bottom: 0.1rem;
+    color: #ffffff;
+}
+
+
 .breadcrumbs li {
     text-transform: capitalize;
     padding-top: 1rem;
