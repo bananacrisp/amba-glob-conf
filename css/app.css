@@ -1,16 +1,66 @@
 body {
  font-family: 'Lato', sans-serif;
- background-color: #00284A;
+ background-color: #ffffff; 
+}
+
+.logo {
+    padding: 1rem;
+    max-width: 240px;
 }
 
 h1 {
-    color: #ffffff;
     font-family: 'Lato', sans-serif;
+    margin-bottom: 0;
 }
 
 h2, h3, h4, h5, h6, p {
     color: #ED7703;
     font-family: 'Lato', sans-serif;
+}
+
+h4 {
+    margin-bottom: 1.2rem;
+}
+
+.header-section {
+    background-color: #00284A;
+}
+
+.title-section {
+    color: #00284A;
+    background-color: #ffffff;
+    padding-top: 2rem;
+}
+
+.stats-section {
+   background-color: #ffffff; 
+   padding: 2rem 0 2rem 0;
+}
+
+.infographic-section {
+    color: #00284A;
+    background-color: #ffffff;
+    padding-bottom: 
+}
+
+.card {
+    background-color: #00284A;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+.card h4 {
+    margin-bottom: 2rem;
+}
+
+.card-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #00284A;
+    color: #fff;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
 }
 
 tbody, tfoot, thead, tbody tr:nth-child(even) {
@@ -26,6 +76,10 @@ table h1 {
 
 hr {
     margin-bottom: 4rem;
+}
+
+infographics {
+    margin
 }
 
 .schools-list p {
