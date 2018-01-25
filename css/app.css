@@ -4,8 +4,7 @@ body {
 }
 
 .logo {
-    padding: 1rem;
-    max-width: 240px;
+    max-width: 140px;
 }
 
 h1 {
@@ -14,8 +13,9 @@ h1 {
 }
 
 h2, h3, h4, h5, h6, p {
-    color: #ED7703;
+/*    color: #ED7703;*/
     font-family: 'Lato', sans-serif;
+    color: rgba(0,134,136,1.0);
 }
 
 h4 {
@@ -23,18 +23,141 @@ h4 {
 }
 
 .header-section {
-    background-color: #00284A;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .title-section {
     color: #00284A;
     background-color: #ffffff;
-    padding-top: 2rem;
+    background: url("../img/global-conf-header.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    max-height: 20rem;
+    position: relative;
+}
+
+.title-strip {
+    background-color: rgba(0,40,71,0.8);
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    bottom: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.title-strip h4 {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.schools-section {
+   padding: 1rem 0 1rem 0;
 }
 
 .stats-section {
-   background-color: #ffffff; 
-   padding: 2rem 0 2rem 0;
+   color: rgba(0,40,71,1.0);
+   padding: 1rem 0 1rem 0;
+}
+
+.stats-section h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgba(0,134,136,1.0);
+}
+
+.stats-section p {
+    line-height: 1.2rem;
+}
+
+.attendees-stats {
+    background: url("../img/background_man.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.strip-color {
+    display: flex;
+    align-items: center
+}
+
+.strip-color h3, .strip-color h4 {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.strip-color-1 {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-color: rgba(0,195,198,0.66);
+}
+
+.strip-color-2 {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background-color: rgba(0,165,167,0.66);
+}
+
+.strip-color-3 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(0,134,136,0.66);
+}
+
+.strip-color-4 {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: rgba(0,102,104,0.66);
+}
+
+.strip-color-5 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgba(0,67,68,0.66);
+}
+
+.strip-color-6 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(0,42,43,0.66);
+}
+
+.text-green {
+    color: rgba(0,134,136,1.0);
+}
+
+.text-header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-sessions {
+/*    border-top: 1px dashed rgba(0,134,136,1.0);*/
+-webkit-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.2);
+padding: 1rem;
+margin-bottom: 1.2rem;
+border-radius: 0.4rem;
+}
+
+.card-sessions h4, .card-sessions h5 {
+    margin-bottom: 0;
+}
+
+.card-sessions h2, .card-sessions p {
+    color: #000;
+}
+
+.card-number {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    margin-bottom: 0.4rem;
+    color: rgba(0,134,136,1.0);
+}
+
+.text-speakers p {
+    margin-bottom: 0;
 }
 
 .infographic-section {
