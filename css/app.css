@@ -86,7 +86,7 @@ h4 {
 }
 
 .attendees-stats {
-    background: url("../img/background_man.jpg") no-repeat center;
+    background: url("../img/person_speaking.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -258,13 +258,10 @@ hr {
     margin-bottom: 4rem;
 }
 
-infographics {
-    margin
-}
-
-.schools-list p {
+.schools-section p {
     margin-bottom: 0.1rem;
-    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1.0rem;
 }
 
 
