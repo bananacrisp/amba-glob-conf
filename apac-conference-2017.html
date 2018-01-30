@@ -8,6 +8,25 @@
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/app.css">
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+});
+</script>
 
 </head>
 <body>
@@ -54,27 +73,11 @@
         <h4>Barcelona | June 2017</h4>
       </div>
     </div>
-
-
-<!--     <div class="row">
-      <div class="small-4 columns">
-        <h2>65</h2>
-        <p>Professionals</p>
-      </div>
-      <div class="small-4 columns">
-        <h2>39</h2>
-        <p>Schools</p>
-      </div>
-      <div class="small-4 columns">
-        <h2>19</h2>
-        <p>Countries</p>
-      </div> 
-    </div> -->
   </article>
 </section>
 
 <section class="stats-section">
-  <div class="row text-center">
+  <div class="row medium-6 medium-offset-3 columns text-center">
     <div class="small-4 columns">
       <h1>65</h1>
       <p>School</br>Professionals</p>
@@ -92,30 +95,36 @@
 
 <section class="schools-section">
   <div class="row text-center">
-    <div class="small-3 columns">
-      <img src="img/logo_lbs.jpg">
+    <div class="small-4 medium-2 columns">
+      <img src="img/logo_school_1.jpg">
     </div>
-<!--     <div class="small-3 columns">
-      <img src="img/logo_nub.jpg">
-    </div> -->
-    <div class="small-6 columns">
-      <img src="img/logo_mass.jpg">
+    <div class="small-4 medium-2 columns">
+      <img src="img/logo_school_4.jpg">
     </div>
-    <div class="small-3 columns">
-      <img src="img/logo_said.jpg">
+    <div class="small-4 medium-2 columns">
+      <img src="img/logo_school_3.jpg">
+    </div>
+    <div class="small-4 medium-2 columns">
+      <img src="img/logo_school_2.jpg">
+    </div>
+    <div class="small-4 medium-2 columns">
+      <img src="img/logo_school_6.jpg">
+    </div>
+    <div class="small-4 medium-2 columns">
+      <img src="img/logo_school_5.jpg">
     </div>
   </div>
-<!--   <div class="row text-center">
+  <div class="row text-center">
     <div class="small-12 columns">
-      <a href="">view more attending schools</a>
+      <a href="#attending_schools">view the full list of schools</a>
     </div>
-  </div> -->
+  </div>
 </section>
 
 <section class="attendees-section">
   <div class="expanded row">
     <div class="small-12 columns text-center">
-      <h2 class="text-green text-header">Attendees</h2>
+      <h2 class="text-green text-header">Who Attended?</h2>
     </div>
   </div>
   <article class="attendees-stats">
@@ -203,9 +212,32 @@
       </div>
     </div>
   </article>
-
 </section>
 
+
+
+<section class="sponsor-section">
+  <div class="row">
+    <div class="small-12 columns text-center">
+      <h2 class="text-green text-header">Event Partners</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-6 medium-3 columns text-center img-holder">
+      <img src="img/logo_wsj.jpg">
+    </div>
+    <div class="small-6 medium-3 columns text-center">
+      <img src="img/logo_gmc.jpg">
+    </div>
+    <div class="small-6 medium-3 columns text-center img-holder">
+      <img src="img/logo_gre.jpg">
+    </div>
+    <div class="small-6 medium-3 columns text-center img-holder">
+      <img src="img/logo_liason.jpg">
+    </div>
+  </div>
+
+</section>
 
 <section class="session-section">
   <div class="row">
@@ -384,42 +416,11 @@
         </article>
       </article>
     </div>
-
-
-
-
   </div>
 
 </section>
 
-
-<section class="sponsor-section">
-  <div class="row">
-    <div class="small-12 columns text-center">
-      <h2 class="text-green text-header">Proudly Sponsored by</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="small-6 medium-3 columns text-center">
-      <img src="img/logo_wsj.jpg">
-    </div>
-    <div class="small-6 medium-3 columns text-center">
-      <img src="img/logo_gmc.jpg">
-    </div>
-    <div class="small-6 medium-3 columns text-center">
-      <img src="img/logo_gre.jpg">
-    </div>
-    <div class="small-6 medium-3 columns text-center">
-      <img src="img/logo_liason.jpg">
-    </div>
-  </div>
-
-</section>
-
-
-
-
-<section class="schools-section">
+<section class="schools-section" id="attending_schools">
   <div class="row text-center">
     <div class="small-12 columns">
       <h2 class="text-green text-header">Attending Schools</h3>
@@ -481,7 +482,15 @@
   </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<footer class="section-footer">
+  <div class="row">
+    <div class="small-12 columns">
+      <p>Association of MBAs, 25 Hosier Lane, London EC1A 9LQ</p>      
+    </div>
+  </div>
+</footer>
+
+
 <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
 <script>
       $(document).foundation();
