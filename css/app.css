@@ -42,14 +42,14 @@ h4 {
 
 .hero-section-temp {
     background-color: #F5F5F3;
-    padding-top: 7.5%;
-    padding-bottom: 7.5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 /*    background: #F5F5F3 url("../img/temp/rosette.png") no-repeat right bottom;*/
 }
 
 .section-20 {
-    padding-top: 7.5%;
-    padding-bottom: 7.5%;   
+    padding-top: 3rem;
+    padding-bottom: 3rem;  
 }
 
 .cert-image {
